@@ -21,8 +21,18 @@ body {
   box-sizing: border-box;
 }
 
+/* @media screen and (max-width: 480px) {
+  * {
+    font-size: 11px;
+  }
+} */
+
 .container {
   margin: 1rem;
+}
+
+nav {
+  margin-bottom: 6rem;
 }
 
 nav,
@@ -34,7 +44,6 @@ nav,
 .right-nav > li {
   margin-right: 1rem;
   color: var(--secondary-color);
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -44,7 +53,6 @@ nav,
 
 .brand-name {
   color: var(--primary-color);
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -54,4 +62,89 @@ nav,
 
 .list-non-bullet {
   list-style: none;
+}
+
+.f-bold {
+  font-weight: bold;
+}
+
+main {
+  width: 70vw;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  line-height: 1.5;
+  text-align: center;
+  padding: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100vw;
+  }
+}
+
+main .head {
+  max-width: 700px;
+  width: 80%;
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 800px) {
+  main .head {
+    font-size: 2rem;
+  }
+}
+
+main .subhead {
+  width: 90%;
+  max-width: 750px;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  main .subhead {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 95%;
+  }
+}
+
+.twin-buttons a {
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 600;
+  color: var(--text-color);
+  min-width: 100px;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  border: none;
+  margin: 1rem;
+  box-shadow: rgb(0 0 0 / 24%) 0px 4px 9px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
 }
