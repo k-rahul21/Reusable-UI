@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+
+:root {
+  --primary-color: #183a1d;
+  --secondary-color: #f0a04b;
+  --text-color: #fefbe9;
+  --footer-bg-color: #e1eedd;
+  --danger: #f44336;
+  --success: #4caf50;
+  --warning: #ff9800;
+}
+
+body {
+  background-color: #fefbe9;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 1rem;
+}
+
+nav {
+  margin-bottom: 6rem;
+}
+
+nav,
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-nav > li {
+  margin-right: 1rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.right-nav > li:hover {
+  color: var(--primary-color);
+}
+
+.brand-name {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.brand-name:hover {
+  color: var(--secondary-color);
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+main {
+  width: 70vw;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  line-height: 1.5;
+  text-align: center;
+  padding: 1rem;
+  align-items: center;
+}
+
+main .head {
+  max-width: 700px;
+  width: 80%;
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+main .subhead {
+  width: 90%;
+  max-width: 750px;
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+.twin-buttons a {
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 600;
+  color: var(--text-color);
+  min-width: 100px;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  border: none;
+  margin: 1rem;
+  box-shadow: rgb(0 0 0 / 24%) 0px 4px 9px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100vw;
+  }
+
+  main .subhead {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 95%;
+  }
+
+  main .head {
+    font-size: 2rem;
+  }
+}
