@@ -25,6 +25,10 @@ body {
   margin: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   margin-bottom: 6rem;
 }
@@ -87,10 +91,6 @@ main .subhead {
   font-size: 1.2rem;
   line-height: 2;
   margin-bottom: 1.5rem;
-}
-
-.twin-buttons a {
-  text-decoration: none;
 }
 
 .btn {
