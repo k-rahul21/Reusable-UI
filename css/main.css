@@ -58,7 +58,7 @@ nav,
   list-style: none;
 }
 
-.f-bold {
+.font-bold {
   font-weight: bold;
 }
 
@@ -73,12 +73,6 @@ main {
   align-items: center;
 }
 
-@media screen and (max-width: 800px) {
-  main {
-    width: 100vw;
-  }
-}
-
 main .head {
   max-width: 700px;
   width: 80%;
@@ -87,26 +81,12 @@ main .head {
   font-weight: 900;
 }
 
-@media screen and (max-width: 800px) {
-  main .head {
-    font-size: 2rem;
-  }
-}
-
 main .subhead {
   width: 90%;
   max-width: 750px;
   font-size: 1.2rem;
   line-height: 2;
   margin-bottom: 1.5rem;
-}
-
-@media screen and (max-width: 800px) {
-  main .subhead {
-    font-size: 1rem;
-    line-height: 1.5;
-    width: 95%;
-  }
 }
 
 .twin-buttons a {
@@ -141,4 +121,20 @@ main .subhead {
 .btn-secondary:hover {
   color: var(--text-color);
   background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100vw;
+  }
+
+  main .subhead {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 95%;
+  }
+
+  main .head {
+    font-size: 2rem;
+  }
 }
