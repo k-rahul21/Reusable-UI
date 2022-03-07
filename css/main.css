@@ -30,7 +30,7 @@ a {
 }
 
 nav {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 nav,
@@ -121,6 +121,24 @@ main .subhead {
 .btn-secondary:hover {
   color: var(--text-color);
   background-color: var(--primary-color);
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-snippet {
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  border-radius: 7px;
+}
+
+.class-highlight {
+  background: var(--CODE-HIGHLIGHT-BG);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 800px) {
