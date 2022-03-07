@@ -123,6 +123,33 @@ main .subhead {
   background-color: var(--primary-color);
 }
 
+.content {
+  margin-left: 250px;
+  height: 500px;
+  width: 70vw;
+  position: relative;
+  overflow: auto;
+  z-index: 1;
+}
+
+span {
+  color: var(--secondary-color);
+}
+
+.wrapper-heading {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 1px solid;
+  margin: 1rem 0;
+}
+
+.wrapper-description {
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
