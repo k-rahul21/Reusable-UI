@@ -27,3 +27,28 @@
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
 }
+
+.content {
+  margin-left: 250px;
+  height: 500px;
+  width: 65vw;
+  position: relative;
+  overflow: auto;
+  z-index: 1;
+}
+
+span {
+  color: var(--secondary-color);
+}
+
+.wrapper-heading {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  border-bottom: 1px solid;
+  margin: 1rem 0;
+}
+
+.wrapper-description {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
