@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Rahul Khandelwal" />
+    <meta name="description" content="Component library" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/components/alert/alert.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Alert</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="left-nav">
+          <a class="brand-name font-bold" href="/index.html">Reusable-UI</a>
+        </div>
+        <ul class="right-nav list-non-bullet">
+          <li class="font-bold">Docs</li>
+          <li class="font-bold">Contribute</li>
+        </ul>
+      </nav>
+
+      <div class="doc-container">
+        <div class="sidebar">
+          <div class="nested-list1">
+            <div class="list-topic font-bold">
+              <a href="/Get Started/introduction.html">Get Started</a>
+            </div>
+            <ul class="list-subtopic list-non-bullet">
+              <li>
+                <a href="/Get Started/introduction.html">Introduction</a>
+              </li>
+            </ul>
+            </div>
+
+            <div class="nested-list1">
+                <div class="list-topic font-bold">
+                    <a href="#">Components</a>
+                </div>
+                <ul class="list-subtopic list-non-bullet">
+                    <li>
+                        <a href="/components/alert/alert.html">Alert</a>
+                    </li>
+                    <li>
+                        <a href="#">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="#">Badge</a>
+                    </li>
+                    <li>
+                        <a href="#">Button</a>
+                    </li>
+                    <li>
+                        <a href="#">Card</a>
+                    </li>
+                    <li>
+                        <a href="#">Image</a>
+                    </li>
+                    <li>
+                        <a href="#">Input</a>
+                    </li>
+                    <li>
+                        <a href="#">List</a>
+                    </li>
+                    <li>
+                        <a href="#">Toast</a>
+                    </li>
+                </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content">
+            <h1 class="wrapper-heading font-bold">Alert</h1>
+           <div class="description wrapper-description">
+            An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
+           </div> 
+
+           <h1 class="wrapper-heading font-bold">Simple Alert</h1>
+           <div class="description wrapper-description">
+            Simple Alerts can be created using alert class, followed by the variant name like <span> primary-alert </span>, <span> success-alert </span>, <span> danger-alert </span> 
+               or <span> warning-alert </span>.
+           </div>
+
+        <div class="example-div">
+            <div class="alert primary-alert">
+               This is a simple primary alert!
+            </div>
+            <div class="alert success-alert">
+                This is a simple success alert!
+            </div>
+            <div class="alert danger-alert">
+                This is a simple danger alert!
+            </div>
+            <div class="alert warning-alert">
+                This is a simple warning alert!
+            </div>  
+
+            <pre>
+                <code class="code-snippet">
+                <-- Using the alert class followed by the variant name -->
+
+                <div class="alert primary-alert">
+                    This is a simple Primary Alert!
+                </div>
+                </code>
+             </pre>
+        </div>
+
+        <h1 class="wrapper-heading font-bold">Outline Alert</h1>
+        <div class="description wrapper-description">
+            Outline alerts are created by using alert class, followed by outline-variant like <span> outline-primary-alert </span>, <span> outline-success-alert </span>, <span> outline-danger-alert </span>
+             or <span> outline-warning-alert </span>.
+        </div>
+
+        <div class="example-div">
+            <div class="alert outline-primary-alert">
+               This is a simple primary alert!
+            </div>
+            <div class="alert outline-success-alert">
+                This is a simple success alert!
+            </div>
+            <div class="alert outline-danger-alert">
+                This is a simple danger alert!
+            </div>
+            <div class="alert outline-warning-alert">
+                This is a simple warning alert!
+            </div>  
+
+            <pre>
+                <code class="code-snippet">
+                <-- Using the alert class followed by the variant name -->
+
+                <div class="alert outline-primary-alert">
+                    This is a simple Outline Primary Alert!
+                </div>
+                </code>
+             </pre>
+        </div>
+
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+          </script>
+          <script>
+              hljs.highlightAll();
+          </script>
+          <script src="/js/codeblock.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -5,9 +5,13 @@
   --secondary-color: #f0a04b;
   --text-color: #fefbe9;
   --footer-bg-color: #e1eedd;
-  --danger: #f44336;
-  --success: #4caf50;
-  --warning: #ff9800;
+  --light-green: #a7f3d0;
+  --dark-green: #064e3b;
+  --light-red: #fecaca;
+  --dark-red: #f44336;
+  --light-yellow: #fef9c3;
+  --dark-yellow: #facc15;
+  --success-green: #22c55e;
 }
 
 body {
@@ -157,7 +161,7 @@ pre {
 
 .code-snippet {
   text-align: left;
-  width: 80%;
+  width: 60vw;
   margin: auto;
   border-radius: 7px;
 }
