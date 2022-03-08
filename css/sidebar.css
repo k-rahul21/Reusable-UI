@@ -1,0 +1,39 @@
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 85vh;
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+.list-topic {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid;
+}
+
+.list-topic > a {
+  color: var(--primary-color);
+}
+
+.list-subtopic > li {
+  padding: 1rem;
+}
+
+.list-subtopic > li > a {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+}
+
+.list-subtopic > li > a:hover {
+  font-weight: bold;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
