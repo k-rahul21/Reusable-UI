@@ -46,3 +46,8 @@
   border: 1px solid var(--dark-red);
   color: var(--dark-red);
 }
+
+.btn-link {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
