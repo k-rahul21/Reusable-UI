@@ -1,0 +1,25 @@
+.btn {
+  font-weight: bold;
+  border: none;
+  min-width: 100px;
+  width: max-content;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-success {
+  background-color: var(--success-green);
+}
+
+.btn-warning {
+  background-color: var(--dark-yellow);
+}
+
+.btn-danger {
+  background-color: var(--dark-red);
+}
