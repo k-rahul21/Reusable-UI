@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/components/avatar/avatar.css">
     <link rel="stylesheet" href="/components/badge/badge.css" />
     <link
       rel="stylesheet"
@@ -99,17 +100,43 @@
         <div class="example-div">
 
             <div class="component-showcase">
-                <button type="button" class="btn btn-primary">Primary</button> 
-                <button type="button" class="btn btn-success">Success</button>
-                <button type="button" class="btn btn-danger">Danger</button>
-                <button type="button" class="btn btn-warning">Warning</button>
+                <div class="badge-div">
+                    <i class="far fa-envelope"></i>                
+                    <span class="badge-number">6</span>
+                </div>
+                    
+                    
+                <div class="badge-div">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span class="badge-number">15</span>
+                </div>
+                    
+                    
+                <div class="badge-div">
+                    <i class="far fa-bell"></i>
+                    <span class="badge-dotted badge-notify"></span>
+                </div>
             </div> 
 
             <pre>
                 <code class="code-snippet">
-                  <-- Using the btn class followed by the variant name -->
-                   
-                  <button type="button" class="btn btn-primary">Primary</button> 
+                                    
+                    <div class="badge-div">
+                        <i class="far fa-envelope"></i>                
+                        <span class="badge-number">6</span>
+                    </div>
+                    
+                    
+                    <div class="badge-div">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <span class="badge-number">15</span>
+                    </div>
+                    
+                    
+                    <div class="badge-div">
+                        <i class="far fa-bell"></i>
+                        <span class="badge-dotted-red badge-notify"></span>
+                    </div> 
                 </code>
             </pre>
           </div>
@@ -121,18 +148,44 @@
   
         <div class="example-div">
 
-            <div class="componet-showcase">
-                <button type="button" class="btn btn-outline-primary">Primary</button> 
-                <button type="button" class="btn btn-outline-success">Success</button>
-                <button type="button" class="btn btn-outline-danger">Danger</button>
-                <button type="button" class="btn btn-outline-warning">Warning</button>
+            <div class="component-showcase">
+                <div class="badge-div">
+                    <img class="avatar " src="/assets/male-avatar.jpg" alt="Male avatar">
+                    <div class="badge-profile badge-profile-online"></div>
+                </div>
+                    
+                    
+                <div class="badge-div">
+                    <img class="avatar " src="/assets/female-avatar.webp" alt="Female avatar">
+                    <div class="badge-profile badge-profile-offline "></div>
+                </div>
+                    
+                    
+                <div class="badge-div">
+                    <img class="avatar " src="/assets/male-avatar.jpg" alt="Male avatar">
+                    <div class="badge-profile badge-profile-dnd"></div>
+                </div>
             </div>  
   
             <pre>
                 <code class="code-snippet">
-                  <-- Using the btn class followed by the variant name -->
-
-                  <button type="button" class="btn btn-outline-primary">Primary</button> 
+                 
+                    <div class="badge-div">
+                        <img class="avatar " src="Your Image Url" alt="Male avatar">
+                        <div class="badge-profile badge-profile-online"></div>
+                    </div>
+                    
+                    
+                    <div class="badge-div">
+                        <img class="avatar " src="Your Image Url" alt="Male avatar">
+                        <div class="badge-profile badge-profile-offline "></div>
+                    </div>
+                    
+                    
+                    <div class="badge-div">
+                        <img class="avatar " src="Your Image Url" alt="Male avatar">
+                        <div class="badge-profile badge-profile-dnd"></div>
+                    </div> 
                   
                 </code>
             </pre>
