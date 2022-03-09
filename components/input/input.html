@@ -101,49 +101,109 @@
         </div>
 
         <div class="example-div">
-          <div class="component-showcase">
-              <div class="input">
-            <div class="input-group">
-              <label for="username">Username *</label>
-              <input type="text" name="Username" class="input-text" required />
-            </div>
+            <div class="component-showcase">
+            <div class="input">
+                <div class="input-group">
+                    <label for="username">Username *</label>
+                    <input type="text" name="Username" class="input-text" required />
+                </div>
 
-            <div class="input-group err">
-              <label for="password">Password *</label>
-              <input type="text" name="password" class="input-text" required />
-              <div class="error-message">Password is incorrect. Try again.</div>
+                <div class="input-group err">
+                    <label for="password">Password *</label>
+                    <input type="text" name="password" class="input-text" required />
+                    <div class="error-message">Password is incorrect. Try again.</div>
+                </div>
             </div>
-          </div>
         </div>
 
-            <pre>
-                    <code class="code-snippet">
-                         <!-- Using 'input-group' as outside container, containing label, input and error-
+        <pre>
+            <code class="code-snippet">
+                <!-- Using 'input-group' as outside container, containing label, input and error-
                 message -->    
 
-                         <div class="input-group">
-                            <label for="">Username *</label>
-                            <input type="text" name="" class="input-text" required />
-                          </div>
+                <div class="input-group">
+                    <label for="">Username *</label>
+                    <input type="text" name="" class="input-text" required />
+                </div>
               
-                          <div class="input-group err">
-                            <label for="">Password *</label>
-                            <input type="text" name="" class="input-text" required />
-                            <div class="error-message">Wrong Password. Try again.</div>
-                          </div>
-                </pre>
-          </div>
+                <div class="input-group err">
+                    <label for="">Password *</label>
+                    <input type="text" name="" class="input-text" required />
+                    <div class="error-message">Wrong Password. Try again.</div>
+                </div>
+            </code>
+        </pre>
+        </div>
 
-          <script
+        <h1 class="wrapper-heading font-bold">Radio</h1>
+        <div class="description wrapper-description">
+            Radio buttons allow the user to select one option from a set.
+        </div>
+
+        <div class="example-div">
+            <div class="component-showcase">
+            <div class="radio">
+                <label for="radio-1">
+                <input id="radio-1" name="radio" type="radio" checked>
+                Checked
+                </label>
+            </div>
+
+            <div class="radio">
+                <label for="radio-2">
+                <input id="radio-2" name="radio" type="radio">
+                Unchecked   
+                </label>
+            </div>
+
+            <div class="radio disabled">
+                <label for="radio-3">
+                <input id="radio-3" name="radio" type="radio" disabled>
+                Disabled
+                </label>
+            </div>
+        </div>
+
+        <pre>
+            <code class="code-snippet">
+            <!-- Using the alert class followed by the variant name.  -->
+            
+            <div class="radio">
+                <label for="radio-1">
+                <input id="radio-1" name="radio" type="radio">
+                Checked
+                </label>
+            </div>
+
+            <div class="radio">
+                <label for="radio-2">
+                <input id="radio-2" name="radio" type="radio">
+                Unchecked   
+                </label>
+            </div>
+
+            <div class="radio disabled">
+                <label for="radio-3">
+                <input id="radio-3" name="radio" type="radio">
+                Disabled
+                </label>
+            </div>
+        
+            </code>
+        </pre>
+        </div>
+    
+        <script
             src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
             integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
-          ></script>
-          <script>
+          >
+        </script>
+        <script>
             hljs.highlightAll();
-          </script>
-          <script src="/js/codeblock.js"></script>
+        </script>
+        <script src="/js/codeblock.js"></script>
         </div>
       </div>
     </div>
