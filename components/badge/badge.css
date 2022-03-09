@@ -7,9 +7,9 @@
 
 .badge-number {
   font-size: 0.9rem;
-  background-color: var(--dark-red);
+  background-color: var(--secondary-color);
   border-radius: 50%;
-  color: var(--white-color);
+  color: var(--primary-color);
   height: 25px;
   width: 25px;
   text-align: center;
