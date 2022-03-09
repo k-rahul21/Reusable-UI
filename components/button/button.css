@@ -51,3 +51,8 @@
   background-color: var(--primary-color);
   color: var(--text-color);
 }
+
+.btn-icon {
+  color: inherit;
+  margin: 0 0.2rem;
+}
