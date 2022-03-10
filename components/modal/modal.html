@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Rahul Khandelwal" />
+    <meta name="description" content="Component library" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/components/avatar/avatar.css" />
+    <link rel="stylesheet" href="/components/button/button.css">
+    <link rel="stylesheet" href="/components/modal/modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Modal</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>
+          <div class="left-nav">
+            <a class="brand-name font-bold" href="/index.html">Reusable-UI</a>
+          </div>
+          <ul class="right-nav list-non-bullet">
+            <li class="font-bold">Docs</li>
+            <li class="font-bold">Contribute</li>
+          </ul>
+        </nav>
+  
+        <div class="doc-container">
+          <div class="sidebar">
+            <div class="nested-list1">
+              <div class="list-topic font-bold">
+                <a href="/Get Started/introduction.html">Get Started</a>
+              </div>
+              <ul class="list-subtopic list-non-bullet">
+                <li>
+                  <a href="/Get Started/introduction.html">Introduction</a>
+                </li>
+              </ul>
+              </div>
+  
+              <div class="nested-list1">
+                  <div class="list-topic font-bold">
+                      <a href="#">Components</a>
+                  </div>
+                  <ul class="list-subtopic list-non-bullet">
+                      <li>
+                        <a href="/components/alert/alert.html">Alert</a>
+                      </li>
+                      <li>
+                        <a href="/components/avatar/avatar.html">Avatar</a>
+                      </li>
+                      <li>
+                          <a href="/components/badge/badge.html">Badge</a>
+                      </li>
+                      <li>
+                          <a href="/components/button/button.html">Button</a>
+                      </li>
+                      <li>
+                          <a href="#">Card</a>
+                      </li>
+                      <li>
+                          <a href="/components/image/image.html">Image</a>
+                      </li>
+                      <li>
+                          <a href="/components/input/input.html">Input</a>
+                      </li>
+                      <li>
+                        <a href="#">Navigation</a>
+                      </li>
+                      <li>
+                          <a href="#">List</a>
+                      </li>
+                      <li>
+                        <a href="/components/modal/modal.html">Modal</a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 class="wrapper-heading font-bold">Modal</h1>
+            <div class="description wrapper-description">
+                Modals are used when you want the complete attention of the user. They blockout the interaction of the user with other part of the UI until the modal is resolved.
+           </div> 
+
+           <h1 class="wrapper-heading font-bold">Modal with CTA side by side</h1>
+           <div class="description wrapper-description">
+            Variant 1.0 of modal.
+           </div>
+
+          <div class="example-div">
+
+            <div class="component-showcase">
+              <div class="card_container">
+                <div class="card-header">
+                  <h3 class="title">Are you sure you want to exit?</h3>
+                  <button class="close"> X</button>
+                </div>
+                <div class="card-body">
+                  <p class="description card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                    a galley of type.</p>
+                </div>
+                <div class="card-btn">
+                  <button class="btn btn-primary nohover">YES</button>
+                  <button class="btn btn-outline-danger">NO</button>
+                </div>
+                </div>
+           </div>
+
+           <pre>
+             <code class="code-snippet">
+
+                <div class="card_container">
+                  <div class="card-header">
+                    <h3 class="title">title</h3>
+                    <button class="close"> X</button>
+                  </div>
+                  <div class="card-body">
+                    <p class="description card-content">Here comes the content.</p>
+                  </div>
+                  <div class="card-btn">
+                    <button class="btn btn-primary">YES</button>
+                    <button class="btn btn-outline-danger">NO</button>
+                  </div>
+                </div>
+            </code>
+          </pre>
+        </div>
+
+        <h1 class="wrapper-heading font-bold">Modal 2</h1>
+        <div class="description wrapper-description">
+         Variant 2.0 of modal.
+        </div>
+
+       <div class="example-div">
+
+         <div class="component-showcase">
+           <div class="card_container">
+             <div class="card-header">
+               <h3 class="title">Are you sure you want to exit?</h3>
+               <button class="close"> X</button>
+             </div>
+             <div class="card-body">
+               <p class="description card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                 a galley of type.</p>
+             </div>
+             <div class="twin-btn">
+               <button class="btn btn-primary nohover">YES</button>
+               <button class="btn btn-outline-danger">NO</button>
+             </div>
+             </div>
+        </div>
+
+        <pre>
+          <code class="code-snippet">
+
+             <div class="card_container">
+               <div class="card-header">
+                 <h3 class="title">title</h3>
+                 <button class="close"> X</button>
+               </div>
+               <div class="card-body">
+                 <p class="description card-content">Here comes the content.</p>
+               </div>
+               <div class="twin-btn ">
+                 <button class="btn btn-primary">YES</button>
+                 <button class="btn btn-outline-danger">NO</button>
+               </div>
+             </div>
+         </code>
+       </pre>
+     </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+            hljs.highlightAll();
+        </script>
+        <script src="/js/codeblock.js"></script>
+        </div>
+        </div>
+      </div>
+  </body>
+</html>
