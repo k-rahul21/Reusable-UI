@@ -186,6 +186,10 @@ pre {
   margin-bottom: 5rem;
 }
 
+.nohover {
+  pointer-events: none;
+}
+
 @media screen and (max-width: 800px) {
   main {
     width: 100vw;
