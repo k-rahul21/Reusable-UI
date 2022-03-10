@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Rahul Khandelwal" />
+    <meta name="description" content="Component library" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/components/avatar/avatar.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="left-nav">
+          <a class="brand-name font-bold" href="/index.html">Reusable-UI</a>
+        </div>
+        <ul class="right-nav list-non-bullet">
+          <li class="font-bold">Docs</li>
+          <li class="font-bold">Contribute</li>
+        </ul>
+      </nav>
+
+      <div class="doc-container">
+        <div class="sidebar">
+          <div class="nested-list1">
+            <div class="list-topic font-bold">
+              <a href="/Get Started/introduction.html">Get Started</a>
+            </div>
+            <ul class="list-subtopic list-non-bullet">
+              <li>
+                <a href="/Get Started/introduction.html">Introduction</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nested-list1">
+            <div class="list-topic font-bold">
+              <a href="#">Components</a>
+            </div>
+            <ul class="list-subtopic list-non-bullet">
+              <li>
+                <a href="/components/alert/alert.html">Alert</a>
+              </li>
+              <li>
+                <a href="/components/avatar/avatar.html">Avatar</a>
+              </li>
+              <li>
+                <a href="/components/badge/badge.css">Badge</a>
+              </li>
+              <li>
+                <a href="/components/button/button.html">Button</a>
+              </li>
+              <li>
+                <a href="#">Card</a>
+              </li>
+              <li>
+                <a href="#">Image</a>
+              </li>
+              <li>
+                <a href="#">Input</a>
+              </li>
+              <li>
+                <a href="#">List</a>
+              </li>
+              <li>
+                <a href="#">Toast</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1 class="wrapper-heading font-bold">Inputs</h1>
+        <div class="description wrapper-description">
+          Inputs are necessary for user interaction with the website. Inputs are
+          used to take information from the user, and then save the data to the
+          server, accordingly.
+        </div>
+
+        <h1 class="wrapper-heading font-bold">Label Inputs</h1>
+        <div class="description wrapper-description">
+          Label Input has a label present at the top of the input field. They
+          can be customized to show error error-message, and change color
+          accordingly.
+        </div>
+
+        <div class="example-div">
+          <div class="component-showcase">
+            <div class="input">
+              <div class="input-group">
+                <label for="username">Username *</label>
+                <input
+                  type="text"
+                  name="Username"
+                  class="input-text"
+                  required
+                />
+              </div>
+
+              <div class="input-group err">
+                <label for="password">Password *</label>
+                <input
+                  type="text"
+                  name="password"
+                  class="input-text"
+                  required
+                />
+                <div class="error-message">
+                  Password is incorrect. Try again.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="code-snippet">
+                <!-- Using 'input-group' as outside container, containing label, input and error-
+                message -->    
+
+                <div class="input-group">
+                    <label for="">Username *</label>
+                    <input type="text" name="" class="input-text" required />
+                </div>
+              
+                <div class="input-group err">
+                    <label for="">Password *</label>
+                    <input type="text" name="" class="input-text" required />
+                    <div class="error-message">Wrong Password. Try again.</div>
+                </div>
+            </code>
+        </pre>
+        </div>
+
+        <h1 class="wrapper-heading font-bold">Radio</h1>
+        <div class="description wrapper-description">
+          Radio buttons allow the user to select one option from a set.
+        </div>
+
+        <div class="example-div">
+          <div class="component-showcase">
+            <div class="radio">
+              <label for="radio-1">
+                <input id="radio-1" name="radio" type="radio" checked />
+                Checked
+              </label>
+            </div>
+
+            <div class="radio">
+              <label for="radio-2">
+                <input id="radio-2" name="radio" type="radio" />
+                Unchecked
+              </label>
+            </div>
+
+            <div class="radio disabled">
+              <label for="radio-3">
+                <input id="radio-3" name="radio" type="radio" disabled />
+                Disabled
+              </label>
+            </div>
+          </div>
+
+          <pre>
+            <code class="code-snippet">
+            <!-- Using the alert class followed by the variant name.  -->
+            
+            <div class="radio">
+                <label for="radio-one">
+                    <input id="radio-one" name="radio" type="radio">
+                    Checked
+                </label>
+            </div>
+
+            <div class="radio">
+                <label for="radio-two">
+                    <input id="radio-two" name="radio" type="radio">
+                    Unchecked   
+                </label>
+            </div>
+
+            <div class="radio disabled">
+                <label for="radio-three">
+                    <input id="radio-three" name="radio" type="radio">
+                    Disabled
+                </label>
+            </div>
+        
+            </code>
+        </pre>
+        </div>
+
+          <h1 class="wrapper-heading font-bold">Checkbox</h1>
+          <div class="description wrapper-description">
+            Checkboxes are used to let a user select one or more options of a
+            limited number of choices.
+          </div>
+
+          <div class="example-div">
+            <div class="component-showcase">
+              <div class="input-checkbox">
+                <label for="checkbox-one">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-one"
+                    checked
+                  />
+                  Checked
+                </label>
+              </div>
+
+              <div class="input-checkbox">
+                <label for="checkbox-two">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-two"
+                    unchecked
+                  />
+                  Unchecked
+                </label>
+              </div>
+
+              <div class="input-checkbox disabled">
+                <label for="checkbox-three">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox-three"
+                    disabled
+                  />
+                  Disabled
+                </label>
+              </div>
+            </div>
+
+            <pre>
+            <code class="code-snippet">
+            <!-- Using 'checkbox' class for the outside div, containing input and label. -->
+            
+            <div class="input-checkbox">
+                <label for="checkbox-one">
+                  <input type="checkbox" name="checkbox" id="checkbox-one" checked="">
+                  Checked
+                </label>
+              </div>
+              
+              <div class="input-checkbox">
+                <label for="checkbox-two">
+                  <input type="checkbox" name="checkbox" id="checkbox-two" unchecked="">
+                  Unchecked
+                </label>
+              </div>
+              
+              <div class="input-checkbox disabled">
+                <label for="checkbox-three">
+                  <input type="checkbox" name="checkbox" id="checkbox-three" disabled="">
+                  Disabled
+                </label>
+              </div>
+        
+            </code>
+        </pre>
+          </div>
+
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+            integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          ></script>
+          <script>
+            hljs.highlightAll();
+          </script>
+          <script src="/js/codeblock.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
