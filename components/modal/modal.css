@@ -1,0 +1,43 @@
+.card_container {
+  width: 35vw;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 35px rgb(0 0 0 / 10%);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-header > button {
+  background-color: var(--white-color);
+  border: none;
+}
+
+.card-body {
+  margin: 10px 0;
+}
+
+.card-content {
+  padding: 1rem 0;
+  color: var(--primary-color);
+}
+
+.card-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.twin-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.twin-btn > button {
+  margin-bottom: 0.5rem;
+  width: 30vw;
+}
