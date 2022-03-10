@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Rahul Khandelwal" />
+    <meta name="description" content="Component library" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/components/avatar/avatar.css">
+    <link rel="stylesheet" href="/components/badge/badge.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Badges</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>
+          <div class="left-nav">
+            <a class="brand-name font-bold" href="/index.html">Reusable-UI</a>
+          </div>
+          <ul class="right-nav list-non-bullet">
+            <li class="font-bold">Docs</li>
+            <li class="font-bold">Contribute</li>
+          </ul>
+        </nav>
+  
+        <div class="doc-container">
+          <div class="sidebar">
+            <div class="nested-list1">
+              <div class="list-topic font-bold">
+                <a href="/Get Started/introduction.html">Get Started</a>
+              </div>
+              <ul class="list-subtopic list-non-bullet">
+                <li>
+                  <a href="/Get Started/introduction.html">Introduction</a>
+                </li>
+              </ul>
+              </div>
+  
+              <div class="nested-list1">
+                  <div class="list-topic font-bold">
+                      <a href="#">Components</a>
+                  </div>
+                  <ul class="list-subtopic list-non-bullet">
+                      <li>
+                          <a href="/components/alert/alert.html">Alert</a>
+                      </li>
+                      <li>
+                          <a href="/components/avatar/avatar.html">Avatar</a>
+                      </li>
+                      <li>
+                          <a href="/components/badge/badge.css">Badge</a>
+                      </li>
+                      <li>
+                          <a href="/components/button/button.html">Button</a>
+                      </li>
+                      <li>
+                          <a href="#">Card</a>
+                      </li>
+                      <li>
+                          <a href="#">Image</a>
+                      </li>
+                      <li>
+                          <a href="#">Input</a>
+                      </li>
+                      <li>
+                          <a href="#">List</a>
+                      </li>
+                      <li>
+                          <a href="#">Toast</a>
+                      </li>
+                  </ul>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="content">
+              <h1 class="wrapper-heading font-bold">Badges</h1>
+             <div class="description wrapper-description">
+                Badges are small circles, positioned either at the top-right or bottom-right of the parent component. They can be used to display notifications, updates, and users' status depending on where they are used.
+             </div> 
+  
+             <h1 class="wrapper-heading font-bold">Basic Badges</h1>
+             <div class="description wrapper-description">
+                Basic badges are used to show the information on the item.                 
+             </div>
+  
+        <div class="example-div">
+
+            <div class="component-showcase">
+                <div class="badge-div">
+                    <i class="far fa-envelope"></i>                
+                    <span class="badge-number">6</span>
+                </div>
+                    
+                    
+                <div class="badge-div">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span class="badge-number">15</span>
+                </div>
+                    
+                    
+                <div class="badge-div">
+                    <i class="far fa-bell"></i>
+                    <span class="badge-dotted badge-notify"></span>
+                </div>
+            </div> 
+
+            <pre>
+                <code class="code-snippet">
+                                    
+                    <div class="badge-div">
+                        <i class="far fa-envelope"></i>                
+                        <span class="badge-number">6</span>
+                    </div>
+                    
+                    
+                    <div class="badge-div">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <span class="badge-number">15</span>
+                    </div>
+                    
+                    
+                    <div class="badge-div">
+                        <i class="far fa-bell"></i>
+                        <span class="badge-dotted-red badge-notify"></span>
+                    </div> 
+                </code>
+            </pre>
+          </div>
+  
+        <h1 class="wrapper-heading font-bold">Profile Badge</h1>
+        <div class="description wrapper-description">
+            Profile Badges are used to show the status of the user.
+        </div>
+  
+        <div class="example-div">
+
+            <div class="component-showcase">
+                <div class="badge-div">
+                    <img class="avatar " src="/assets/male-avatar.jpg" alt="Male avatar">
+                    <div class="badge-profile badge-profile-online"></div>
+                </div>
+                    
+                    
+                <div class="badge-div">
+                    <img class="avatar " src="/assets/female-avatar.webp" alt="Female avatar">
+                    <div class="badge-profile badge-profile-offline "></div>
+                </div>
+                    
+                    
+                <div class="badge-div">
+                    <img class="avatar " src="/assets/male-avatar.jpg" alt="Male avatar">
+                    <div class="badge-profile badge-profile-dnd"></div>
+                </div>
+            </div>  
+  
+            <pre>
+                <code class="code-snippet">
+                 
+                    <div class="badge-div">
+                        <img class="avatar " src="Your Image Url" alt="Male avatar">
+                        <div class="badge-profile badge-profile-online"></div>
+                    </div>
+                    
+                    
+                    <div class="badge-div">
+                        <img class="avatar " src="Your Image Url" alt="Male avatar">
+                        <div class="badge-profile badge-profile-offline "></div>
+                    </div>
+                    
+                    
+                    <div class="badge-div">
+                        <img class="avatar " src="Your Image Url" alt="Male avatar">
+                        <div class="badge-profile badge-profile-dnd"></div>
+                    </div> 
+                  
+                </code>
+            </pre>
+        </div>  
+  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        <script>
+            hljs.highlightAll();
+        </script>
+        <script src="/js/codeblock.js"></script>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
