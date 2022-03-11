@@ -1,0 +1,20 @@
+.navigation-bar {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  width: 60vw;
+}
+
+.left-aligned {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.spaced-around {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-bar .left-nav {
+  padding-right: 1rem;
+}

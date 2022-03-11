@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/components/avatar/avatar.css" />
-    <link rel="stylesheet" href="/components/button/button.css">
-    <link rel="stylesheet" href="/components/modal/modal.css" />
+    <link rel="stylesheet" href="/components/navigation/navigation.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -22,7 +21,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Modal</title>
+    <title>Navigation</title>
   </head>
   <body>
     <div class="container">
@@ -51,7 +50,7 @@
   
               <div class="nested-list1">
                   <div class="list-topic font-bold">
-                      <a href="#">Components</a>
+                      <a href="/components/alert/alert.html">Components</a>
                   </div>
                   <ul class="list-subtopic list-non-bullet">
                       <li>
@@ -79,7 +78,7 @@
                         <a href="/components/navigation/navigation.html">Navigation</a>
                       </li>
                       <li>
-                          <a href="/components/list/list.html">List</a>
+                          <a href="#">List</a>
                       </li>
                       <li>
                         <a href="/components/modal/modal.html">Modal</a>
@@ -90,101 +89,87 @@
         </div>
 
         <div class="content">
-            <h1 class="wrapper-heading font-bold">Modal</h1>
+            <h1 class="wrapper-heading font-bold">Navigation</h1>
             <div class="description wrapper-description">
-                Modals are used when you want the complete attention of the user. They blockout the interaction of the user with other part of the UI until the modal is resolved.
+                Navigation is important in modern day apps. They are the first point of interaction for the user to move around your application. The navigation header usually contains a logo, the brand name and the main navigation links.
            </div> 
 
-           <h1 class="wrapper-heading font-bold">Modal with CTA side by side</h1>
+           <h1 class="wrapper-heading font-bold">Left aligned navigation</h1>
            <div class="description wrapper-description">
-            Variant 1.0 of modal.
+                Left aligned navigation has all the items in the navigation bar to the left.
            </div>
 
           <div class="example-div">
 
             <div class="component-showcase">
-              <div class="card_container">
-                <div class="card-header">
-                  <h3 class="title">Are you sure you want to exit?</h3>
-                  <button class="close"> X</button>
-                </div>
-                <div class="card-body">
-                  <p class="description card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
-                    a galley of type.</p>
-                </div>
-                <div class="card-btn">
-                  <button class="btn btn-primary nohover">YES</button>
-                  <button class="btn btn-outline-danger">NO</button>
-                </div>
-                </div>
+                <nav class="navigation-bar left-aligned">
+                    <div class="left-nav">
+                      <a class="font-bold" href="">Brand Name</a>
+                    </div>
+                    <ul class="right-nav list-non-bullet">
+                      <li>Docs</li>
+                      <li>About us</li>
+                      <li>Contribute</li>
+                    </ul>
+                </nav>
            </div>
 
            <pre>
              <code class="code-snippet">
 
-                <div class="card_container">
-                  <div class="card-header">
-                    <h3 class="title">title</h3>
-                    <button class="close"> X</button>
-                  </div>
-                  <div class="card-body">
-                    <p class="description card-content">Here comes the content.</p>
-                  </div>
-                  <div class="card-btn">
-                    <button class="btn btn-primary">YES</button>
-                    <button class="btn btn-outline-danger">NO</button>
-                  </div>
-                </div>
+                <nav class="navigation-bar left-aligned">
+                    <div class="left-nav">
+                      <a class="font-bold" href="your brand logo image url">Brand Name</a>
+                    </div>
+                    <ul class="right-nav list-non-bullet">
+                      <li>Docs</li>
+                      <li>About us</li>
+                      <li>Contribute</li>
+                    </ul>
+                </nav>
             </code>
           </pre>
         </div>
 
-        <h1 class="wrapper-heading font-bold">Modal 2</h1>
-        <div class="description wrapper-description">
-         Variant 2.0 of modal.
+        <h1 class="wrapper-heading font-bold">Spaced out Navigation</h1>
+           <div class="description wrapper-description">
+                Spaced out navigation has the brand logo and the navigation links on the extreme ends of the navbar.
+           </div>
+
+          <div class="example-div">
+
+            <div class="component-showcase">
+                <nav class="navigation-bar spaced-around">
+                    <div class="left-nav">
+                      <a class="font-bold" href="">Brand Name</a>
+                    </div>
+                    <ul class="right-nav list-non-bullet">
+                      <li>Docs</li>
+                      <li>About us</li>
+                      <li>Contribute</li>
+                    </ul>
+                </nav>
+           </div>
+
+           <pre>
+             <code class="code-snippet">
+
+                <nav class="navigation-bar spaced-around">
+                    <div class="left-nav">
+                      <a class="font-bold" href="Your brand logo image url">Brand Name</a>
+                    </div>
+                    <ul class="right-nav list-non-bullet">
+                      <li>Docs</li>
+                      <li>About us</li>
+                      <li>Contribute</li>
+                    </ul>
+                </nav>
+            </code>
+          </pre>
         </div>
 
-       <div class="example-div">
 
-         <div class="component-showcase">
-           <div class="card_container">
-             <div class="card-header">
-               <h3 class="title">Are you sure you want to exit?</h3>
-               <button class="close"> X</button>
-             </div>
-             <div class="card-body">
-               <p class="description card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
-                 a galley of type.</p>
-             </div>
-             <div class="twin-btn">
-               <button class="btn btn-primary nohover">YES</button>
-               <button class="btn btn-outline-danger">NO</button>
-             </div>
-             </div>
-        </div>
-
-        <pre>
-          <code class="code-snippet">
-
-             <div class="card_container">
-               <div class="card-header">
-                 <h3 class="title">title</h3>
-                 <button class="close"> X</button>
-               </div>
-               <div class="card-body">
-                 <p class="description card-content">Here comes the content.</p>
-               </div>
-               <div class="twin-btn ">
-                 <button class="btn btn-primary">YES</button>
-                 <button class="btn btn-outline-danger">NO</button>
-               </div>
-             </div>
-         </code>
-       </pre>
-     </div>
-
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
         <script>
