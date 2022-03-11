@@ -187,8 +187,49 @@ pre {
   margin-bottom: 5rem;
 }
 
+.component-showcase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
 .nohover {
   pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin: 2rem;
+    height: auto;
+    width: 70vw;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .component-showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content {
+    margin: 2rem;
+    height: auto;
+    width: 80vw;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .component-showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 800px) {
