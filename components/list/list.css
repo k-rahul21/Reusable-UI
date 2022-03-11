@@ -1,0 +1,24 @@
+.list-container {
+  width: 18vw;
+  border: 1px solid var(--light-grey);
+}
+
+.list-label {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+li {
+  padding: 0.5rem 1rem;
+}
+
+.stacked-list {
+  padding: 1rem;
+}
+
+.stacked-list-item {
+  background-color: var(--light-grey);
+  padding: 1rem;
+  margin: 0.25rem;
+}
