@@ -15,6 +15,10 @@ In order to introduce Ingredient to your project, Copy the link given below and 
 
 ## Alternative
 Add the following import to your CSS file at the top before all other CSS file imports.
+```
+@import url("https://reusable-ui.netlify.app/css/index.css");
+
+```
 
 ## List of Components in Reusable-ui
 - Alert
