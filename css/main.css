@@ -232,6 +232,27 @@ pre {
   }
 }
 
+@media only screen and (min-width: 850px) {
+  .content {
+    margin: 2rem;
+    height: auto;
+    width: 80vw;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 992px) {
+  .content {
+    margin-left: 250px;
+    height: 500px;
+    width: 80vw;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+  }
+}
+
 @media screen and (max-width: 800px) {
   main {
     width: 100vw;

@@ -49,3 +49,19 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 850px) {
+  .sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 200px;
+    height: 85vh;
+    overflow-y: scroll;
+  }
+}
