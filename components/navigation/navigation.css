@@ -1,4 +1,6 @@
 .navigation-bar {
+  /* display: flex;
+  flex-wrap: wrap; */
   background-color: var(--primary-color);
   color: var(--white-color);
   padding: 1rem;
@@ -17,4 +19,14 @@
 
 .navigation-bar .left-nav {
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation-bar .left-nav {
+    padding-right: 0;
+  }
+
+  .right-nav {
+    flex-direction: column;
+  }
 }
