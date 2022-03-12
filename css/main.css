@@ -219,6 +219,9 @@ pre {
     width: 95vw;
   }
 
+  main .head {
+    font-size: 2rem;
+  }
   
 }
 
