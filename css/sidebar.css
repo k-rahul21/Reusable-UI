@@ -37,3 +37,31 @@
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
 }
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 200px;
+    height: 85vh;
+    overflow-y: scroll;
+  }
+}

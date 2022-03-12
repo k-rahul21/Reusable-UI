@@ -43,7 +43,8 @@ nav {
 }
 
 nav,
-.right-nav {
+.right-nav,
+.next-prev-btns {
   display: flex;
   justify-content: space-between;
 }
@@ -54,7 +55,7 @@ nav,
   cursor: pointer;
 }
 
-.right-nav > li:hover {
+.right-nav > li > a:hover {
   color: var(--primary-color);
 }
 
@@ -83,6 +84,7 @@ main {
   line-height: 1.5;
   text-align: center;
   padding: 1rem;
+  padding-top: 5rem;
   align-items: center;
 }
 
@@ -188,8 +190,89 @@ pre {
   margin-bottom: 5rem;
 }
 
+.component-showcase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
 .nohover {
   pointer-events: none;
+}
+
+.next-prev-btns > a {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.next-prev-btns > a:hover {
+  border-radius: .5rem;
+  outline: 1px solid;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin: 2rem;
+    height: auto;
+    width: 70vw;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .component-showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  main {
+    width: 95vw;
+  }
+
+  main .head {
+    font-size: 2rem;
+  }
+  
+}
+
+@media only screen and (min-width: 600px) {
+  .content {
+    margin: 2rem;
+    height: auto;
+    width: 80vw;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .component-showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .content {
+    margin: 2rem;
+    height: auto;
+    width: 80vw;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 992px) {
+  .content {
+    margin-left: 250px;
+    height: 500px;
+    width: 80vw;
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 800px) {
