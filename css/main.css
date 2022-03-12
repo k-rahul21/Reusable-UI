@@ -15,6 +15,8 @@
   --dark-yellow: #facc15;
   --success-green: #22c55e;
   --light-grey: #f7f5f5;
+  --dark-grey: #7e818c;
+  --shadow-color: 0 10px 35px rgb(0 0 0 / 10%);
 }
 
 body {

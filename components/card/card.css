@@ -1,0 +1,119 @@
+.product-name,
+.product-description,
+.price-section {
+  padding-bottom: 0.2rem;
+}
+
+.card {
+  width: 25vw;
+  padding: 1rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 0.5rem;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.price-section {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  gap: 1rem;
+}
+
+.price-section .discounted-price {
+  font-weight: bold;
+}
+
+.price-section .original-price {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--dark-grey);
+  text-decoration: line-through;
+}
+
+.card-cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-cta button {
+  margin: 1rem 0 0 0;
+  width: 9vw;
+}
+
+.container-image .badge {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  top: 8px;
+  left: 0px;
+  color: var(--secondary-color);
+  background-color: var(--light-grey);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.container-image .btn-dismiss {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  border-radius: 5rem;
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-color);
+}
+
+.offer-section {
+  padding: 0.5rem 1rem;
+}
+
+.offer-section .description {
+  font-size: 0.9rem;
+}
+
+.offer-list,
+.description {
+  padding-top: 0.5rem;
+}
+
+.offer-list > li {
+  color: var(--dark-grey);
+  font-size: 0.8rem;
+}
+
+.horizontal-card {
+  max-width: 40rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  padding: 1rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 0.5rem;
+}
+
+.horizontal-card .card-image {
+  width: 10rem;
+}
+
+.container-image {
+  position: relative;
+  text-align: center;
+  color: var(--dark-grey);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  text-align: left;
+}
