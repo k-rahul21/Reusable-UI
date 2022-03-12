@@ -42,7 +42,8 @@ nav {
 }
 
 nav,
-.right-nav {
+.right-nav,
+.next-prev-btns {
   display: flex;
   justify-content: space-between;
 }
@@ -197,6 +198,16 @@ pre {
 
 .nohover {
   pointer-events: none;
+}
+
+.next-prev-btns > a {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.next-prev-btns > a:hover {
+  border-radius: .5rem;
+  outline: 1px solid;
 }
 
 @media only screen and (max-width: 600px) {
