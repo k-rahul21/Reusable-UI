@@ -29,6 +29,7 @@
 .card-btn {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .twin-btn {
@@ -40,4 +41,14 @@
 .twin-btn > button {
   margin-bottom: 0.5rem;
   width: 30vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .card_container {
+    width: 50vw;
+  }
+
+  .card-btn {
+    justify-content: center;
+  }
 }
