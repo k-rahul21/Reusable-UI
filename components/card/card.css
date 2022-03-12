@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-cta button {
@@ -96,6 +97,7 @@
   display: flex;
   gap: 1rem;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 1rem;
   border: 1px solid var(--light-grey);
   border-radius: 0.5rem;
@@ -116,4 +118,26 @@
   bottom: 8px;
   left: 16px;
   text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 50vw;
+  }
+
+  .overlay-text {
+    font-size: 0.8rem;
+    bottom: 2px;
+    left: 5px;
+  }
+
+  .card-cta button {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 40vw;
+  }
 }
