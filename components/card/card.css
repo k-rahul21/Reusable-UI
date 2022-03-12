@@ -97,7 +97,6 @@
   display: flex;
   gap: 1rem;
   flex-direction: row;
-  flex-wrap: wrap;
   padding: 1rem;
   border: 1px solid var(--light-grey);
   border-radius: 0.5rem;
@@ -134,10 +133,23 @@
   .card-cta button {
     width: 50vw;
   }
+
+  .horizontal-card {
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .card {
     width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .card {
+    width: 25vw;
+    padding: 1rem;
+    border: 1px solid var(--light-grey);
+    border-radius: 0.5rem;
   }
 }
