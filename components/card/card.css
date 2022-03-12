@@ -70,7 +70,7 @@
 }
 
 .shadow-card {
-  box-shadow: 0 10px 35px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow-color);
 }
 
 .offer-section {
