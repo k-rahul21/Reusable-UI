@@ -65,10 +65,6 @@ nav,
   text-decoration: none;
 }
 
-.brand-name:hover {
-  color: var(--secondary-color);
-}
-
 .list-non-bullet {
   list-style: none;
 }
@@ -121,18 +117,10 @@ main .subhead {
   background-color: var(--primary-color);
 }
 
-.btn-primary:hover {
-  background-color: var(--secondary-color);
-}
-
 .btn-secondary {
-  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  background-color: var(--white-color);
   color: var(--primary-color);
-}
-
-.btn-secondary:hover {
-  color: var(--text-color);
-  background-color: var(--primary-color);
 }
 
 .content {
