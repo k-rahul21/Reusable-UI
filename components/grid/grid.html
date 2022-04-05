@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/sidebar.css" />
-    <link rel="stylesheet" href="/components/avatar/avatar.css" />
-    <link rel="stylesheet" href="/components/navigation/navigation.css" />
+    <link rel="stylesheet" href="/components/grid/grid.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -79,11 +78,7 @@
                 <a href="/components/input/input.html">Input</a>
               </li>
               <li>
-                <a
-                  href="/components/navigation/navigation.html"
-                  class="active-page"
-                  >Navigation</a
-                >
+                <a href="/components/navigation/navigation.html">Navigation</a>
               </li>
               <li>
                 <a href="/components/list/list.html">List</a>
@@ -98,6 +93,81 @@
               </li>
             </ul>
           </div>
+        </div>
+
+        <div class="content">
+          <h1 class="wrapper-heading font-bold">Grids</h1>
+          <div class="description wrapper-description">
+            Grids are used to design the web pages using a grid-based layout
+            system with rows and columns. This helps create complex responsive
+            web designs easily.
+          </div>
+
+          <h1 class="wrapper-heading font-bold">Two Column Grid</h1>
+          <div class="description wrapper-description">
+            The grids are in 1:1 ratio, dividing the width into 2 equal halves.
+            Use class <span>grid-column-2</span> in the parent container to get
+            the below style.
+          </div>
+
+          <div class="example-div">
+            <div class="grid grid-column-2">
+              <div class="grid-item">Item</div>
+              <div class="grid-item">Item</div>
+            </div>
+
+            <pre>
+             <code class="code-snippet">
+                <div class="grid grid-col-2">
+                    <div class="grid-item">Item</div>
+                    <div class="grid-item">Item</div>
+                </div>
+            </code>
+          </pre>
+          </div>
+
+          <h1 class="wrapper-heading font-bold">Three Column Grid</h1>
+          <div class="description wrapper-description">
+            The grids dividing the width into 3 equal sections. Use the class
+            <span>grid-column-3</span> in the parent container to get the below
+            style.
+          </div>
+
+          <div class="example-div">
+            <div class="grid grid-column-3">
+              <div class="grid-item">Item</div>
+              <div class="grid-item">Item</div>
+              <div class="grid-item">Item</div>
+            </div>
+
+            <pre>
+             <code class="code-snippet">
+                <div class="grid grid-col-3">
+                    <div class="grid-item">Item</div>
+                    <div class="grid-item">Item</div>
+                    <div class="grid-item">Item</div>
+                </div>
+            </code>
+          </pre>
+          </div>
+
+          <div class="next-prev-btns">
+            <a class="font-bold" href="/components/list/list.html"> < List</a>
+            <a class="font-bold" href="/components/modal/modal.html">
+              Modal ></a
+            >
+          </div>
+
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+            integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          ></script>
+          <script>
+            hljs.highlightAll();
+          </script>
+          <script src="/js/codeblock.js"></script>
         </div>
       </div>
     </div>
