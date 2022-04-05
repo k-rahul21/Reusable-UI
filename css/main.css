@@ -205,11 +205,19 @@ pre {
 .next-prev-btns > a {
   padding: 0.5rem;
   margin: 1rem;
+  color: #000;
 }
 
 .next-prev-btns > a:hover {
-  border-radius: .5rem;
   outline: 1px solid;
+}
+
+.next-prev-btns > a:nth-child(odd):hover {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.next-prev-btns > a:nth-child(even):hover {
+  border-radius: 0 1rem 1rem 0;
 }
 
 @media only screen and (max-width: 600px) {
