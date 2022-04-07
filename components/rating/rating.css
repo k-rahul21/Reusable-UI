@@ -1,0 +1,8 @@
+.ratings-container {
+  display: flex;
+}
+
+.star {
+  font-size: var(--fs-lg);
+  cursor: pointer;
+}
