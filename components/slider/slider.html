@@ -106,22 +106,54 @@
         </div>
       </div>
       <div class="content">
-        <h1 class="wrapper-heading font-bold">Ratings</h1>
+        <h1 class="wrapper-heading font-bold">Slider</h1>
        <div class="description wrapper-description">
-        Ratings are provided by the customers or consumers who have either purchased a product or have had an experience of the service provided to them.
+            sliders allow users to make selections from a range of values.
        </div> 
 
-        <div class="example-div">
-        <div class="component-showcase">
-            
+       
+       <h1 class="wrapper-heading font-bold">Default Slider</h1>
+       <div class="example-div">
+        <div class="slider-container">
+            <input type="range" min="0" max="100" value="40"  step="20" class="slider" id="myRange" >           
         </div>
         
         <pre>
             <code class="code-snippet">
-               
+                <input type="range" min="0" max="100" value="40"  step="20" class="slider" id="myRange" >    
             </code>
          </pre>
-    </div>
+        </div>
+
+       <h1 class="wrapper-heading font-bold">Slider with steps</h1>
+       
+        <div class="example-div">
+        <div class="slider-container">
+            <input type="range" min="500" max="3000" value="1000" list="tickmarks" step="500" class="slider" id="myRange" >   
+            <datalist id="tickmarks" class="slider-datalist">
+                <option value="500" label="500">500</option>
+                <option value="1000" label="1000">1000</option>
+                <option value="1500" label="1500">1500</option>
+                <option value="2000" label="2000">2000</option>
+                <option value="2500" label="2500">2500</option>
+                <option value="3000" label="3000">3000</option>
+            </datalist>         
+        </div>
+        
+        <pre>
+            <code class="code-snippet">
+                <input type="range" min="500" max="3000" value="1000" list="tickmarks" step="500" class="slider" id="myRange" >   
+                <datalist id="tickmarks" class="slider-datalist">
+                    <option value="500" label="500">500</option>
+                    <option value="1000" label="1000">1000</option>
+                    <option value="1500" label="1500">1500</option>
+                    <option value="2000" label="2000">2000</option>
+                    <option value="2500" label="2500">2500</option>
+                    <option value="3000" label="3000">3000</option>
+                </datalist> 
+            </code>
+         </pre>
+        </div>
 
     <div class="next-prev-btns">
       <a class="font-bold" href="/components/rating/rating.html"> < Rating</a>
