@@ -26,11 +26,16 @@ Add the following import to your CSS file at the top before all other CSS file i
 - Badge
 - Button
 - Card
+- Grid
 - Image
 - Input
-- Navigation
 - List
 - Modal
+- Navigation
+- Rating
+- Slider
+- Toast
+- Typography
 
 ## How can you help?
 You can contribute to this library. Go ahead and Fork it.
