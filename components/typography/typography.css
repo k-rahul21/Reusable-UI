@@ -1,0 +1,39 @@
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.p-lg {
+  font-size: 1.7rem;
+}
+
+.p-md {
+  font-size: 1.3rem;
+}
+
+.p-sm {
+  font-size: 1rem;
+}
+
+.text-gray {
+  color: var(--dark-grey);
+}
+
+.text-alignment-container {
+  outline: 1px solid;
+  padding: 2rem;
+  margin: 2rem auto;
+  background: var(--TEXT-UTILS-DEMO-BG);
+  width: 50%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

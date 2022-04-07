@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Rahul Khandelwal" />
     <meta name="description" content="Component library" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/sidebar.css" />
-    <link rel="stylesheet" href="/components/toast/toast.css" />
+    <link rel="stylesheet" href="/components/typography/typography.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
@@ -20,7 +19,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>Toasts</title>
+    <title>Typography</title>
   </head>
   <body>
     <div class="container">
@@ -37,7 +36,6 @@
           </li>
         </ul>
       </nav>
-
       <div class="doc-container">
         <div class="sidebar">
           <div class="nested-list1">
@@ -88,10 +86,10 @@
                 <a href="/components/grid/grid.html">Grid</a>
               </li> 
               <li>
-                  <a href="/components/toast/toast.html" class="active-page">Toast</a>
+                  <a href="/components/toast/toast.html">Toast</a>
               </li>
               <li>
-                <a href="/components/typography/typography.html">Typography</a>
+                  <a href="/components/typography/typography.html" class="active-page">Typography</a>
               </li>
               <li>
                 <a href="/components/rating/rating.html">Rating</a>
@@ -104,101 +102,87 @@
         </div>
       </div>
       <div class="content">
-        <h1 class="wrapper-heading font-bold">Toasts</h1>
+        <h1 class="wrapper-heading font-bold">Typography</h1>
        <div class="description wrapper-description">
-        Toasts are used to convery some information after an action. It lasts for a few seconds before disappearing. They are usually used for quick info to the user without blocking the screen/ userflow.
+        Typography is used for styling the headings, paragraph of the web page.
        </div> 
 
+       <h1 class="wrapper-heading font-bold">Headings</h1>
+       <div class="description wrapper-description">
+        There are 6 variants of headings available - h1 through h6. Use the tags h1 through h6 as per the preferred size.
+       </div>
+
         <div class="example-div">
-            <div class="toast toast-warning">
-                <div class="toast-icon">
-                    <span class="material-icons md-24">
-                        warning
-                    </span>
-                </div>
-                <div class="toast-msg font-bold">
-                    This is a Warning message!
-                </div>
-            </div>
-            <div class="toast toast-success">
-                <div class="toast-icon">
-                    <span class="material-icons md-24">
-                        check_circle
-                    </span>
-                </div>
-                <div class="toast-msg font-bold">
-                 This is a Success message!
-                </div>
-            </div>
-            <div class="toast toast-info">
-                <div class="toast-icon">
-                    <span class="material-icons md-24">
-                        info
-                    </span>
-                </div>
-                <div class="toast-msg font-bold">
-                 This is a Information message!
-                 </div>
-            </div>
-            <div class="toast toast-error">
-                <div class="toast-icon">
-                    <span class="material-icons md-24">
-                        report
-                    </span>
-                </div>
-                <div class="toast-msg font-bold">
-                 This is a Error message!
-                 </div>
-            </div>  
+            <h1 class="mb-1">This is h1 heading</h1>
+            <h2 class="mb-1">This is h2 heading</h2>
+            <h3 class="mb-1">This is h3 heading</h3>
+            <h4 class="mb-1">This is h4 heading</h4>
+            <h5 class="mb-1">This is h5 heading</h5>
+            <h6 class="mb-1">This is h6 heading</h6>
         
         <pre>
             <code class="code-snippet">
-                <div class="toast toast-warning">
-                    <div class="toast-icon">
-                        <span class="material-icons md-24">
-                            warning
-                        </span>
-                    </div>
-                    <div class="toast-msg font-bold">
-                        This is a Warning message!
-                    </div>
-                </div>
-                <div class="toast toast-success">
-                    <div class="toast-icon">
-                        <span class="material-icons md-24">
-                            check_circle
-                        </span>
-                    </div>
-                    <div class="toast-msg font-bold">
-                     This is a Success message!
-                    </div>
-                </div>
-                <div class="toast toast-info">
-                    <div class="toast-icon">
-                        <span class="material-icons md-24">
-                            info
-                        </span>
-                    </div>
-                    <div class="toast-msg font-bold">
-                     This is a Information message!
-                     </div>
-                </div>
-                <div class="toast toast-error">
-                    <div class="toast-icon">
-                        <span class="material-icons md-24">
-                            report
-                        </span>
-                    </div>
-                    <div class="toast-msg font-bold">
-                     This is a Error message!
-                     </div>
-                </div>  
+               
+                <h1>This is h1 heading</h1>
+                <h2>This is h2 heading</h2>
+                <h3>This is h3 heading</h3>
+                <h4>This is h4 heading</h4>
+                <h5>This is h5 heading</h5>
+                <h6>This is h6 heading</h6>
+                
             </code>
          </pre>
     </div>
 
+    <h1 class="wrapper-heading font-bold">Small text</h1>
+    <div class="description wrapper-description">
+        We have 3 sizes available along with a grey variant. Use class <span>p-lg</span> for large text, <span>p-md</span> for medium text, <span>p-sm</span> for small text and <span>text-grey</span> for grey text. Adding no class results in the default text.
+    </div>
+
+    <div class="example-div">
+        <div class="component-showcase">
+            <p class="p-lg">Small text</p>
+            <p class="p-md">Small text</p>
+            <p class="p-sm">Small text</p>
+            <p class="p-sm text-gray">Small text</p>
+        </div>
+    <pre>
+        <code class="code-snippet">
+           
+            <p class="p-lg">Small text</p>
+            <p class="p-md">Small text</p>
+            <p class="p-sm">Small text</p>
+            <p class="p-sm text-gray">Small text</p>
+                    
+        </code>
+     </pre>
+    </div>
+
+    <h1 class="wrapper-heading font-bold">Text Alignment</h1>
+    <div class="description wrapper-description">
+        Below, we have text aligned left, right, and center. Use class <span>text-left</span> for left alignment, <span>text-center</span> for center alignment, or <span>text-right</span> for right alignment.
+    </div>
+
+    <div class="example-div">
+        <div class="text-alignment-container">
+            <p class="text-left mb-1">This is aligned left</p>
+            <p class="text-center mb-1">This is aligned center</p>
+            <p class="text-right mb-1">This is aligned right</p>
+        </div>
+
+    <pre>
+        <code class="code-snippet">
+           
+            <p class="text-left">This is aligned left</p>
+            <p class="text-center">This is aligned center</p>
+            <p class="text-right">This is aligned right</p>
+                    
+        </code>
+     </pre>
+    </div>
+
     <div class="next-prev-btns">
-      <a class="font-bold" href="/components/grid/grid.html"> < Grid</a>
+      <a class="font-bold" href="/components/toast/toast.html"> < Toast</a>
       <a class="font-bold" href="/components/rating/rating.html">Rating ></a>
     </div>
 
