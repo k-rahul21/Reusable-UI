@@ -31,3 +31,9 @@
   border: 1px solid var(--dark-yellow);
   color: var(--dark-yellow);
 }
+
+@media only screen and (max-width: 600px) {
+  .toast {
+    width: 15rem;
+  }
+}
