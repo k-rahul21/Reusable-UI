@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/sidebar.css" />
-    <link rel="stylesheet" href="/components/rating/rating.css" />
+    <link rel="stylesheet" href="/components/toast/toast.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
@@ -16,8 +16,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Rating</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Toasts</title>
   </head>
   <body>
     <div class="container">
@@ -83,12 +86,12 @@
               </li>
               <li>
                 <a href="/components/grid/grid.html">Grid</a>
+              </li> 
+              <li>
+                  <a href="/components/toast/toast.html" class="active-page">Toast</a>
               </li>
               <li>
-                <a href="/components/toast/toast.html">Toast</a>
-              </li>
-              <li>
-                <a href="/components/rating/rating.html" class="active-page">Rating</a>
+                <a href="/components/rating/rating.html">Rating</a>
               </li>
               <li>
                 <a href="/components/modal/modal.html">Modal</a>
@@ -98,58 +101,102 @@
         </div>
       </div>
       <div class="content">
-        <h1 class="wrapper-heading font-bold">Ratings</h1>
+        <h1 class="wrapper-heading font-bold">Toasts</h1>
        <div class="description wrapper-description">
-        Ratings are provided by the customers or consumers who have either purchased a product or have had an experience of the service provided to them.
+        Toasts are used to convery some information after an action. It lasts for a few seconds before disappearing. They are usually used for quick info to the user without blocking the screen/ userflow.
        </div> 
 
         <div class="example-div">
-        <div class="component-showcase">
-            <div class="ratings-container">
-                <div class="star selected">
-                    <span class="material-icons md-24">star</span>
+            <div class="toast toast-warning">
+                <div class="toast-icon">
+                    <span class="material-icons md-24">
+                        warning
+                    </span>
                 </div>
-                <div class="star selected">
-                    <span class="material-icons md-24">star</span>  
+                <div class="toast-msg font-bold">
+                    This is a Warning message!
                 </div>
-                <div class="star selected">
-                    <span class="half-star material-icons md-24">star_half</span>
-                </div>
-                <div class="star">  
-                    <span class="material-icons md-24">star_outline</span>
-                </div>
-                <div class="star">  
-                    <span class="material-icons md-24">star_outline</span> 
-                </div> 
             </div>
-        </div>
+            <div class="toast toast-success">
+                <div class="toast-icon">
+                    <span class="material-icons md-24">
+                        check_circle
+                    </span>
+                </div>
+                <div class="toast-msg font-bold">
+                 This is a Success message!
+                </div>
+            </div>
+            <div class="toast toast-info">
+                <div class="toast-icon">
+                    <span class="material-icons md-24">
+                        info
+                    </span>
+                </div>
+                <div class="toast-msg font-bold">
+                 This is a Information message!
+                 </div>
+            </div>
+            <div class="toast toast-error">
+                <div class="toast-icon">
+                    <span class="material-icons md-24">
+                        report
+                    </span>
+                </div>
+                <div class="toast-msg font-bold">
+                 This is a Error message!
+                 </div>
+            </div>  
         
         <pre>
             <code class="code-snippet">
-                <div class="ratings-container">
-                    <div class="star selected">
-                        <span class="material-icons md-24">star</span>
+                <div class="toast toast-warning">
+                    <div class="toast-icon">
+                        <span class="material-icons md-24">
+                            warning
+                        </span>
                     </div>
-                    <div class="star selected">
-                        <span class="material-icons md-24">star</span>  
+                    <div class="toast-msg font-bold">
+                        This is a Warning message!
                     </div>
-                    <div class="star selected">
-                        <span class="half-star material-icons md-24">star_half</span>
-                    </div>
-                    <div class="star">  
-                        <span class="material-icons md-24">star_outline</span>
-                    </div>
-                    <div class="star">  
-                        <span class="material-icons md-24">star_outline</span> 
-                    </div> 
                 </div>
+                <div class="toast toast-success">
+                    <div class="toast-icon">
+                        <span class="material-icons md-24">
+                            check_circle
+                        </span>
+                    </div>
+                    <div class="toast-msg font-bold">
+                     This is a Success message!
+                    </div>
+                </div>
+                <div class="toast toast-info">
+                    <div class="toast-icon">
+                        <span class="material-icons md-24">
+                            info
+                        </span>
+                    </div>
+                    <div class="toast-msg font-bold">
+                     This is a Information message!
+                     </div>
+                </div>
+                <div class="toast toast-error">
+                    <div class="toast-icon">
+                        <span class="material-icons md-24">
+                            report
+                        </span>
+                    </div>
+                    <div class="toast-msg font-bold">
+                     This is a Error message!
+                     </div>
+                </div>  
             </code>
          </pre>
     </div>
 
     <div class="next-prev-btns">
       <a class="font-bold" href="/components/grid/grid.html"> < Grid</a>
-      <a class="font-bold" href="/components/modal/modal.html">Modal ></a>
+      <a class="font-bold" href="/components/rating/rating.html">Rating ></a>
     </div>
 
 
